@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGODES - Monitoramento de Motores</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>BIGODES</h2>
+
+        <h3>Motores Conectados</h3>
+
+        <div class="status-motor bom">
+            🟢 Motor 1
+        </div>
+
+        <div class="status-motor ruim">
+            🔴 Motor 2
+        </div>
+
+        <div class="info-menu">
+            <p>Total: 2 Motores</p>
+            <p>Sistema Online</p>
+        </div>
+
+    </div>
+
+    <div class="conteudo">
+
+        <h1>MONITORAMENTO INTELIGENTE DE MOTORES</h1>
+
+        <!-- MOTOR 1 -->
+
+        <div class="motor-card">
+
+            <div class="motor-info">
+
+                <img src="MOTOR.png" class="motor-online">
+
+                <h2>Motor 1</h2>
+
+                <p>
+🟢 Status: Operando Normalmente
+<span class="engrenagem">⚙</span>
+</p>
+                <p>🌡 Temperatura: 42°C</p>
+                <p>📈 Vibração: 2,1 mm/s</p>
+                <p>⚡ Corrente: 8 A</p>
+                <p>🔋 Potência: 5 CV</p>
+                <p>🔧 Última Manutenção: 12/05/2026</p>
+
+            </div>
+
+            <div class="grafico">
+                <canvas id="graficoMotor1"></canvas>
+            </div>
+
+        </div>
+
+        <!-- MOTOR 2 -->
+
+        <div class="motor-card">
+
+            <div class="motor-info">
+
+                <img src="MOTOR.png" class="motor-falha">
+
+                <h2>Motor 2</h2>
+                <p>
+🔴 Status: Necessita Manutenção
+<span class="engrenagem-falha">⚙</span>
+</p>
+
+                <p>🔴 Status: Necessita Manutenção</p>
+                <p>🌡 Temperatura: 95°C</p>
+                <p>📈 Vibração: 8,5 mm/s</p>
+                <p>⚡ Corrente: 15 A</p>
+                <p>🔋 Potência: 5 CV</p>
+                <p>🔧 Última Manutenção: 02/01/2026</p>
+
+            </div>
+
+            <div class="grafico">
+                <canvas id="graficoMotor2"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
